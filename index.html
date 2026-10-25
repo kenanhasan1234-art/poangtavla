@@ -7,10 +7,19 @@
 @keyframes popPoint{0%{transform:scale(.92);color:#e56d20}55%{transform:scale(1.13);color:#d65312}100%{transform:scale(1)}}
 @keyframes confettiDrop{0%{transform:translateY(-12vh) rotate(0);opacity:1}100%{transform:translateY(100vh) rotate(720deg);opacity:0}}
 .rank{animation:enterUp .55s ease both;transition:transform .5s ease,background .5s ease}.rank:nth-child(2){animation-delay:.09s}.rank:nth-child(3){animation-delay:.18s}.rank:first-child{animation:pulseGlow 5s ease-in-out infinite}.score.point-pop,.big.point-pop,.miniStat strong.point-pop{animation:popPoint .7s ease}.tv-stage{display:none}.tv-slide{animation:enterUp .7s ease both}.tv-title{font-family:Georgia,serif;font-size:clamp(32px,4vw,62px);margin:8px 0 28px}.tv-kicker{color:#d96d1d;font-size:15px;font-weight:800;letter-spacing:3px}.tv-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.tv-card{background:#fff;border:1px solid #e9dcd0;border-radius:18px;padding:26px;box-shadow:0 10px 30px #492b1a0b}.tv-card h3{font-size:clamp(22px,2.5vw,36px);margin:8px 0}.tv-number{font-size:clamp(46px,6vw,90px);font-weight:800;color:#e56d20}.tv-secondary{font-size:clamp(22px,2.6vw,36px);font-weight:800;color:#4b2a29}.tv-sub{font-size:16px;color:#876e64}.tv-dots{display:none;justify-content:center;gap:10px;margin:18px 0}.tv-dot{height:8px;width:8px;border-radius:50%;background:#d8c9bb}.tv-dot.active{width:28px;background:#e87725}.celebration{position:fixed;inset:0;z-index:999;pointer-events:none;overflow:hidden}.celebration-message{position:absolute;top:15%;left:50%;transform:translateX(-50%);background:#4b2a29;color:#fff;border:2px solid #f2a04d;border-radius:18px;padding:20px 34px;font-size:clamp(22px,3vw,44px);font-weight:800;text-align:center;box-shadow:0 15px 50px #0005}.confetti{position:absolute;top:0;width:9px;height:16px;animation:confettiDrop 3s linear forwards}.tv-timer{font-size:clamp(20px,2.2vw,32px);font-weight:800;color:#4b2a29;text-align:center;margin:20px 0}
-body.tv .tv-dots{display:flex}body.tv.tv-slide-1 .grid,body.tv.tv-slide-2 .grid{display:none}body.tv.tv-slide-1 .tv-stage,body.tv.tv-slide-2 .tv-stage{display:block}body.tv .hero{margin:8px 0 18px}body.tv .app{padding-top:20px}body.tv .tv-stage{min-height:54vh}
+body.tv .tv-dots{display:flex}body.tv.tv-slide-1 .grid,
+body.tv.tv-slide-2 .grid,
+body.tv.tv-slide-3 .grid{display:none}body.tv.tv-slide-1 .tv-stage,
+body.tv.tv-slide-2 .tv-stage,
+body.tv.tv-slide-3 .tv-stage{display:block}body.tv .hero{margin:8px 0 18px}body.tv .app{padding-top:20px}body.tv .tv-stage{min-height:54vh}
 @media(max-width:800px){.tv-cards{grid-template-columns:1fr}.tv-card{padding:18px}.tv-number{font-size:42px}}
 @media(prefers-reduced-motion:reduce){.rank,.rank:first-child,.tv-slide,.score.point-pop,.big.point-pop,.miniStat strong.point-pop,.confetti{animation:none!important;transition:none!important}}
-</style></head><body><div class="app"><div class="top"><div class="brand">Fastighetsbyrån <span style="color:#e76d21">●</span></div><div class="tag">MALMÖ · 2026</div></div><div class="hero"><div class="tag">KONTORSKAMPEN</div><h1>FINAL SPRINT</h1><div class="sub">1 NOVEMBER – 18 DECEMBER · AVSLUTSJAKTEN</div></div><div class="grid"><section class="panel"><div class="tag">GEMENSAM NEDRÄKNING</div><p class="muted">SÅLDA BOSTÄDER KVAR TILL MÅLET</p><div class="big" id="remaining">203</div><div class="progress"><div class="fill" id="fill"></div></div><div id="countlabel">0 / 203 sålda</div><div class="metrics"><div class="metric"><span class="muted">Provision hittills (estimat)</span><strong id="revenue">0 kr</strong></div><div class="metric"><span class="muted">Kvar till målet</span><strong id="leftrev">9 135 000 kr</strong></div></div><div class="miniStats"><div class="miniStat"><span>UPPDRAG · TOTALT</span><strong id="totalAssignments">0</strong></div><div class="miniStat"><span>BEVAKNINGAR · TOTALT</span><strong id="totalWatches">0</strong></div></div><div class="daycount" id="daysleft"></div></section><section class="panel"><div class="tag">POÄNGSTÄLLNING</div><h2>Vem tar hem finalen?</h2><div class="small">Totala poäng inklusive tidigare resultat</div><div id="ranking"></div><p class="small">10 p per såld · 3 p per uppdrag · 1 p per bevakning</p></section></div><section class="tv-stage" id="tvStage" aria-live="polite"></section><div class="tv-dots" id="tvDots" aria-label="TV-vy"><span class="tv-dot active"></span><span class="tv-dot"></span><span class="tv-dot"></span></div><section class="panel controls"><h2>Administration</h2><p class="muted" id="syncStatus">Ansluter till gemensam databas...</p><div id="login"><label>E-post<input type="email" id="adminEmail" autocomplete="username"></label><label>Lösenord<input type="password" id="adminPassword" autocomplete="current-password"></label><div class="actions"><button id="loginButton">Logga in som administratör</button></div></div><div id="adminPanel" class="hidden"><div class="controlgrid" id="controls"></div><div class="actions"><button id="saveButton" class="alt">Spara alla ändringar</button><button id="logoutButton" class="ghost">Logga ut</button></div></div></section><div class="actions"><button class="alt" id="tvButton">TV-läge / Redigera</button><button class="ghost" id="fullscreenButton">Helskärm</button></div><div class="foot">Gemensam databas via Supabase. Startpoäng v.42: Regementsgatan 228, Triangeln 215, Bulltofta 191.</div></div><div class="celebration hidden" id="celebration" aria-live="polite"></div>
+</style></head><body><div class="app"><div class="top"><div class="brand">Fastighetsbyrån <span style="color:#e76d21">●</span></div><div class="tag">MALMÖ · 2026</div></div><div class="hero"><div class="tag">KONTORSKAMPEN</div><h1>FINAL SPRINT</h1><div class="sub">1 NOVEMBER – 18 DECEMBER · AVSLUTSJAKTEN</div></div><div class="grid"><section class="panel"><div class="tag">GEMENSAM NEDRÄKNING</div><p class="muted">SÅLDA BOSTÄDER KVAR TILL MÅLET</p><div class="big" id="remaining">203</div><div class="progress"><div class="fill" id="fill"></div></div><div id="countlabel">0 / 203 sålda</div><div class="metrics"><div class="metric"><span class="muted">Provision hittills (estimat)</span><strong id="revenue">0 kr</strong></div><div class="metric"><span class="muted">Kvar till målet</span><strong id="leftrev">9 135 000 kr</strong></div></div><div class="miniStats"><div class="miniStat"><span>UPPDRAG · TOTALT</span><strong id="totalAssignments">0</strong></div><div class="miniStat"><span>BEVAKNINGAR · TOTALT</span><strong id="totalWatches">0</strong></div></div><div class="daycount" id="daysleft"></div></section><section class="panel"><div class="tag">POÄNGSTÄLLNING</div><h2>Vem tar hem finalen?</h2><div class="small">Totala poäng inklusive tidigare resultat</div><div id="ranking"></div><p class="small">10 p per såld · 3 p per uppdrag · 1 p per bevakning</p></section></div><section class="tv-stage" id="tvStage" aria-live="polite"></section><div class="tv-dots" id="tvDots" aria-label="TV-vy">
+  <span class="tv-dot active"></span>
+  <span class="tv-dot"></span>
+  <span class="tv-dot"></span>
+  <span class="tv-dot"></span>
+</div><section class="panel controls"><h2>Administration</h2><p class="muted" id="syncStatus">Ansluter till gemensam databas...</p><div id="login"><label>E-post<input type="email" id="adminEmail" autocomplete="username"></label><label>Lösenord<input type="password" id="adminPassword" autocomplete="current-password"></label><div class="actions"><button id="loginButton">Logga in som administratör</button></div></div><div id="adminPanel" class="hidden"><div class="controlgrid" id="controls"></div><div class="actions"><button id="saveButton" class="alt">Spara alla ändringar</button><button id="logoutButton" class="ghost">Logga ut</button></div></div></section><div class="actions"><button class="alt" id="tvButton">TV-läge / Redigera</button><button class="ghost" id="fullscreenButton">Helskärm</button></div><div class="foot">Gemensam databas via Supabase. Startpoäng v.42: Regementsgatan 228, Triangeln 215, Bulltofta 191.</div></div><div class="celebration hidden" id="celebration" aria-live="polite"></div>
 <script type="module">
 import {createClient} from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.0/+esm';
 const db=createClient('https://ywvwkxrmxyrzupzdaieu.supabase.co','sb_publishable_fG82T-uu08XyKYgwfRSiPQ_C-MIZMex');
@@ -20,8 +29,160 @@ const $=id=>document.getElementById(id),fmt=n=>Math.round(n).toLocaleString('sv-
 function render(){const sold=teams.reduce((a,t)=>a+t.sold,0);$('totalAssignments').textContent=fmt(teams.reduce((a,t)=>a+t.assignments,0));$('totalWatches').textContent=fmt(teams.reduce((a,t)=>a+t.watches,0));$('remaining').textContent=fmt(Math.max(0,203-sold));$('fill').style.width=Math.min(100,sold/203*100)+'%';$('countlabel').textContent=fmt(sold)+' / 203 sålda · '+Math.round(sold/203*100)+' %';$('revenue').textContent=fmt(sold*45000)+' kr';$('leftrev').textContent=fmt(Math.max(0,203-sold)*45000)+' kr';$('ranking').innerHTML=[...teams].sort((a,b)=>score(b)-score(a)).map((t,i)=>`<div class="rank"><div style="flex:1"><div class="name">${i+1}. ${t.name}</div><div class="small">${fmt(t.sold)} / ${t.goal} sålda · ${fmt(t.assignments)} uppdrag · ${fmt(t.watches)} bevakningar</div><div class="goalTrack"><div style="width:${Math.min(100,t.sold/t.goal*100)}%"></div></div><div class="small">${fmt(t.base)} tidigare + ${fmt(score(t)-t.base)} nya poäng</div>${i===0?'<div class="leader">★ LEDER JUST NU</div>':''}</div><div class="score">${fmt(score(t))} p</div></div>`).join('');const now=new Date(),end=new Date('2026-12-19T00:00:00+01:00');$('daysleft').textContent=Math.max(0,Math.ceil((end-now)/86400000))+' dagar kvar till finalen'}
 function animateChangedNumbers(){if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;document.querySelectorAll('.score,.big,.miniStat strong').forEach(el=>{el.classList.remove('point-pop');void el.offsetWidth;el.classList.add('point-pop')})}
 function celebrate(message){if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;const layer=$('celebration');clearTimeout(celebrationTimer);layer.innerHTML='<div class="celebration-message"></div>';layer.firstChild.textContent=message;const colors=['#e87725','#f4c16e','#4b2a29','#ffffff'];for(let i=0;i<48;i++){const el=document.createElement('span');el.className='confetti';el.style.left=Math.random()*100+'%';el.style.background=colors[i%colors.length];el.style.animationDelay=Math.random()*.65+'s';el.style.animationDuration=2.3+Math.random()*1.5+'s';layer.appendChild(el)}layer.classList.remove('hidden');celebrationTimer=setTimeout(()=>{layer.classList.add('hidden');layer.innerHTML=''},4200)}
-function renderTV(){const dots=$('tvDots').children;[...dots].forEach((dot,i)=>dot.classList.toggle('active',i===tvSlide));document.body.classList.remove('tv-slide-0','tv-slide-1','tv-slide-2');document.body.classList.add('tv-slide-'+tvSlide);if(tvSlide===0){$('tvStage').innerHTML='';return}const now=new Date(),end=new Date('2026-12-19T00:00:00+01:00'),days=Math.max(0,Math.ceil((end-now)/86400000));if(tvSlide===1){$('tvStage').innerHTML='<div class="tv-slide"><div class="tv-kicker">FÖRSÄLJNINGSJAKTEN</div><h2 class="tv-title">Mot 203 sålda bostäder</h2><div class="tv-cards">'+teams.map(t=>'<div class="tv-card"><h3>'+t.name+'</h3><div class="tv-number">'+fmt(t.sold)+' <span class="tv-sub">/ '+t.goal+'</span></div><div class="progress"><div class="fill" style="width:'+Math.min(100,t.sold/t.goal*100)+'%"></div></div><div class="tv-secondary">'+Math.round(t.sold/t.goal*100)+' % av målet</div><p class="tv-sub">'+fmt(Math.max(0,t.goal-t.sold))+' försäljningar kvar</p></div>').join('')+'</div><div class="tv-timer">'+days+' dagar kvar till finalen</div></div>'}else{$('tvStage').innerHTML='<div class="tv-slide"><div class="tv-kicker">AKTIVITETEN BAKOM RESULTATEN</div><h2 class="tv-title">Uppdrag & bevakningar</h2><div class="tv-cards">'+teams.map(t=>'<div class="tv-card"><h3>'+t.name+'</h3><div class="tv-sub">UPPDRAG</div><div class="tv-number">'+fmt(t.assignments)+'</div><div class="tv-sub">BEVAKNINGAR</div><div class="tv-secondary">'+fmt(t.watches)+'</div></div>').join('')+'</div><div class="tv-timer">Totalt '+fmt(teams.reduce((a,t)=>a+t.assignments,0))+' uppdrag · '+fmt(teams.reduce((a,t)=>a+t.watches,0))+' bevakningar</div></div>'}}
-function setTV(enabled){document.body.classList.toggle('tv',enabled);clearInterval(tvTimer);tvTimer=null;tvSlide=0;renderTV();if(enabled)tvTimer=setInterval(()=>{tvSlide=(tvSlide+1)%3;renderTV()},12000)}
+
+async function renderTV() {
+  const dots = $('tvDots').children;
+  [...dots].forEach((dot, i) => {
+    dot.classList.toggle('active', i === tvSlide);
+  });
+
+  document.body.classList.remove(
+    'tv-slide-0',
+    'tv-slide-1',
+    'tv-slide-2',
+    'tv-slide-3'
+  );
+  document.body.classList.add('tv-slide-' + tvSlide);
+
+  if (tvSlide === 0) {
+    $('tvStage').innerHTML = '';
+    return;
+  }
+
+  const now = new Date();
+  const end = new Date('2026-12-19T00:00:00+01:00');
+  const days = Math.max(0, Math.ceil((end - now) / 86400000));
+
+  if (tvSlide === 1) {
+    $('tvStage').innerHTML = `
+      <div class="tv-slide">
+        <div class="tv-kicker">FÖRSÄLJNINGSJAKTEN</div>
+        <h2 class="tv-title">Mot 203 sålda bostäder</h2>
+        <div class="tv-cards">
+          ${teams.map(t => `
+            <div class="tv-card">
+              <h3>${t.name}</h3>
+              <div class="tv-number">
+                ${fmt(t.sold)}
+                <span class="tv-sub">/ ${t.goal}</span>
+              </div>
+              <div class="progress">
+                <div class="fill" style="width:${Math.min(100, t.sold / t.goal * 100)}%"></div>
+              </div>
+              <div class="tv-secondary">
+                ${Math.round(t.sold / t.goal * 100)} % av målet
+              </div>
+              <p class="tv-sub">
+                ${fmt(Math.max(0, t.goal - t.sold))} försäljningar kvar
+              </p>
+            </div>
+          `).join('')}
+        </div>
+        <div class="tv-timer">${days} dagar kvar till finalen</div>
+      </div>`;
+    return;
+  }
+
+  if (tvSlide === 2) {
+    $('tvStage').innerHTML = `
+      <div class="tv-slide">
+        <div class="tv-kicker">AKTIVITETEN BAKOM RESULTATEN</div>
+        <h2 class="tv-title">Uppdrag & bevakningar</h2>
+        <div class="tv-cards">
+          ${teams.map(t => `
+            <div class="tv-card">
+              <h3>${t.name}</h3>
+              <div class="tv-sub">UPPDRAG</div>
+              <div class="tv-number">${fmt(t.assignments)}</div>
+              <div class="tv-sub">BEVAKNINGAR</div>
+              <div class="tv-secondary">${fmt(t.watches)}</div>
+            </div>
+          `).join('')}
+        </div>
+        <div class="tv-timer">
+          Totalt ${fmt(teams.reduce((a,t) => a + t.assignments, 0))} uppdrag
+          · ${fmt(teams.reduce((a,t) => a + t.watches, 0))} bevakningar
+        </div>
+      </div>`;
+    return;
+  }
+
+  if (tvSlide === 3) {
+    const stage = $('tvStage');
+
+    stage.innerHTML = `
+      <div class="tv-slide">
+        <div class="tv-kicker">FASTIGHETSBYRÅN MALMÖ</div>
+        <h2 class="tv-title">Aktuella budgivningar</h2>
+        <div id="biddingCards" class="tv-cards">
+          <div class="tv-card">Hämtar aktuella budgivningar...</div>
+        </div>
+      </div>`;
+
+    try {
+      const response = await fetch(
+        './budgivningar.json?t=' + Date.now(),
+        { cache: 'no-store' }
+      );
+
+      if (!response.ok) throw new Error('Ingen datafil tillgänglig');
+
+      const data = await response.json();
+      const homes = Array.isArray(data)
+        ? data
+        : (Array.isArray(data.budgivningar) ? data.budgivningar : []);
+
+      if (tvSlide !== 3 || !document.body.classList.contains('tv')) return;
+
+      const container = $('biddingCards');
+      if (!container) return;
+
+      if (!homes.length) {
+        container.textContent = 'Inga verifierade aktiva budgivningar just nu.';
+        return;
+      }
+
+      const escapeHTML = value => String(value ?? '').replace(
+        /[&<>"']/g,
+        c => ({
+          '&': '&amp;', '<': '&lt;', '>': '&gt;',
+          '"': '&quot;', "'": '&#39;'
+        })[c]
+      );
+
+      container.innerHTML = homes.map(home => {
+        const url = String(home.url || '');
+        if (!url.startsWith('https://www.fastighetsbyran.com/')) return '';
+
+        const address = escapeHTML(home.adress || home.address || 'Bostad');
+        const area = escapeHTML(home.omrade || home.area || '');
+        const bid = escapeHTML(home.aktuelltBud || home.currentBid || '');
+        const image = String(home.bild || home.image || '');
+        const safeImage = image.startsWith('https://') ? escapeHTML(image) : '';
+
+        return `
+          <a class="tv-card" href="${escapeHTML(url)}"
+             target="_blank" rel="noopener noreferrer"
+             style="color:inherit;text-decoration:none">
+            ${safeImage ? `
+              <img src="${safeImage}" alt=""
+                   style="width:100%;height:170px;object-fit:cover;border-radius:12px">
+            ` : ''}
+            <h3>${address}</h3>
+            <div class="tv-sub">${area}</div>
+            ${bid ? `<div class="tv-secondary">${bid}</div>` : ''}
+            <div class="leader">AKTIV BUDGIVNING</div>
+          </a>`;
+      }).join('');
+    } catch (error) {
+      if (tvSlide === 3 && $('biddingCards')) {
+        $('biddingCards').textContent =
+          'Budgivningsinformationen är inte tillgänglig just nu.';
+      }
+    }
+  }
+}
+function setTV(enabled){document.body.classList.toggle('tv',enabled);clearInterval(tvTimer);tvTimer=null;tvSlide=0;renderTV();if(enabled)tvTimer=setInterval(()=>{tvSlide=(tvSlide+1)%4;renderTV()},15000)}
 function checkMilestones(before,after){if(!before)return;let changed=false;for(const t of after){const old=before.find(x=>x.name===t.name);if(!old)continue;if(score(t)>score(old))changed=true;for(const pct of [25,50,75,100]){if(old.sold/old.goal*100<pct&&t.sold/t.goal*100>=pct){celebrate(t.name+' har nått '+pct+' % av säljmålet!');return}}}if(changed)animateChangedNumbers()}
 function buildControls(){$('controls').innerHTML=teams.map((t,i)=>`<div class="control"><h3>${t.name}</h3><div class="fields">${[['sold','Sålda'],['assignments','Uppdrag'],['watches','Bevakningar'],['bonus','Bonuspoäng']].map(([k,label])=>`<label>${label}<input data-team="${i}" data-key="${k}" type="number" min="0" step="1" value="${t[k]}"></label>`).join('')}</div></div>`).join('')}
 async function refresh(){if(dirty)return;const {data,error}=await db.from('kontorskampen_results').select('id,sold,assignments,watches,bonus');if(error){$('syncStatus').textContent='Synkroniseringsfel: '+error.message;return}if(!data||data.length!==3){$('syncStatus').textContent='Databasen saknar kontorsdata';return}const before=previousRemote;teams=defaults.map(d=>({...d,...(data.find(x=>x.id===d.name)||{}),name:d.name}));previousRemote=structuredClone(teams);render();renderTV();checkMilestones(before,teams);if(isAdmin)buildControls();$('syncStatus').textContent='Synkroniserad · '+new Date().toLocaleTimeString('sv-SE')}

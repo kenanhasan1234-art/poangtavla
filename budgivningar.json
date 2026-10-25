@@ -1,0 +1,26 @@
+{
+  "updated_at": "2026-10-25T22:17:56.716195+00:00",
+  "budgivningar": [
+    {
+      "adress": "Serenadgatan 62",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/44461468.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3155762"
+    },
+    {
+      "adress": "Kronetorpsgatan 50B",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50771807.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3586865"
+    },
+    {
+      "adress": "Irisgatan 14",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50913865.png",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3592846"
+    }
+  ]
+}

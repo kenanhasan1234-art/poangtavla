@@ -1,4 +1,12 @@
 {
-  "updated_at": "2026-11-04T03:21:15.792409+00:00",
-  "budgivningar": []
+  "updated_at": "2026-11-04T11:26:23.074416+00:00",
+  "budgivningar": [
+    {
+      "adress": "Ingenjörsgatan 4",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50865261.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3593917"
+    }
+  ]
 }

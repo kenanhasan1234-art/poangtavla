@@ -1,6 +1,20 @@
 {
-  "updated_at": "2026-11-04T11:26:23.074416+00:00",
+  "updated_at": "2026-11-04T18:47:50.331269+00:00",
   "budgivningar": [
+    {
+      "adress": "Rödkullastigen 5 A",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/48960821.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3461451"
+    },
+    {
+      "adress": "Lovartsgatan 11A",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50160241.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3527571"
+    },
     {
       "adress": "Ingenjörsgatan 4",
       "omrade": "",

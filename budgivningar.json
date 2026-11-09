@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T05:10:47.812917+00:00",
+  "updated_at": "2026-11-09T13:56:12.569080+00:00",
   "budgivningar": [
     {
       "adress": "Koristgatan 6",
@@ -7,6 +7,13 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50223358.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2688599"
+    },
+    {
+      "adress": "Kristianstadsgatan 31 A",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50521786.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2960305"
     },
     {
       "adress": "Rödkullastigen 5 A",

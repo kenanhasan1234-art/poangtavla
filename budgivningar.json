@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-12T11:42:20.735958+00:00",
+  "updated_at": "2026-11-12T19:10:28.513471+00:00",
   "budgivningar": [
     {
       "adress": "Koristgatan 6",
@@ -7,13 +7,6 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50223358.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2688599"
-    },
-    {
-      "adress": "Kristianstadsgatan 31 A",
-      "omrade": "",
-      "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/50521786.jpg",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2960305"
     },
     {
       "adress": "Rödkullastigen 5 A",
@@ -28,20 +21,6 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50714010.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3581730"
-    },
-    {
-      "adress": "Ingenjörsgatan 4",
-      "omrade": "",
-      "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/50865261.jpg",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3593917"
-    },
-    {
-      "adress": "Sufflörgatan 3",
-      "omrade": "",
-      "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/50945868.jpg",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3601811"
     }
   ]
 }

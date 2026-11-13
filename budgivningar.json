@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-13T07:06:23.699796+00:00",
+  "updated_at": "2026-11-13T15:24:58.158781+00:00",
   "budgivningar": [
     {
       "adress": "Koristgatan 6",
@@ -14,13 +14,6 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/48960821.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3461451"
-    },
-    {
-      "adress": "Sorlabäcksgatan 43",
-      "omrade": "",
-      "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/50714010.jpg",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3581730"
     }
   ]
 }

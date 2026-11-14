@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-14T19:56:57.275426+00:00",
+  "updated_at": "2026-11-14T23:47:08.175031+00:00",
   "budgivningar": [
     {
       "adress": "Koristgatan 6",
@@ -7,6 +7,13 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50223358.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2688599"
+    },
+    {
+      "adress": "Spånehusvägen 56 B",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50763438.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3402316"
     },
     {
       "adress": "Rödkullastigen 5 A",

@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-16T02:59:44.915774+00:00",
+  "updated_at": "2026-11-16T10:58:15.081250+00:00",
   "budgivningar": [
     {
       "adress": "Koristgatan 6",
@@ -28,6 +28,13 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50754851.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3574721"
+    },
+    {
+      "adress": "Köpenhamnsvägen 20B",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/51028613.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3579783"
     }
   ]
 }

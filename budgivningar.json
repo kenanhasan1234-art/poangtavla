@@ -1,12 +1,33 @@
 {
-  "updated_at": "2026-11-23T09:42:15.526414+00:00",
+  "updated_at": "2026-11-23T21:42:21.199255+00:00",
   "budgivningar": [
+    {
+      "adress": "Västra Stallmästaregatan 30 C",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/46175309.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2138170"
+    },
+    {
+      "adress": "Kiviksgatan 6 A",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50442633.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2578191"
+    },
     {
       "adress": "Koristgatan 6",
       "omrade": "",
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50223358.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2688599"
+    },
+    {
+      "adress": "Sofielundsvägen 48 D",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50915243.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3279561"
     },
     {
       "adress": "Odonvidegatan 18b",
@@ -35,13 +56,6 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50922418.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3598540"
-    },
-    {
-      "adress": "Norrbäcksgatan 37",
-      "omrade": "",
-      "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/50948529.webp",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3598925"
     }
   ]
 }

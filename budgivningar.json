@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-24T05:35:06.072168+00:00",
+  "updated_at": "2026-11-24T16:29:18.155894+00:00",
   "budgivningar": [
     {
       "adress": "Västra Stallmästaregatan 30 C",
@@ -30,6 +30,13 @@
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3279561"
     },
     {
+      "adress": "Östra Bernadottesgatan 37C",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/51029082.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3408121"
+    },
+    {
       "adress": "Odonvidegatan 18b",
       "omrade": "",
       "aktuelltBud": "",
@@ -42,20 +49,6 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50889601.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3575017"
-    },
-    {
-      "adress": "Serenadgatan 33 Lgh 1003",
-      "omrade": "",
-      "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/50989272.png",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3598211"
-    },
-    {
-      "adress": "Syréngatan 22",
-      "omrade": "",
-      "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/50922418.jpg",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3598540"
     }
   ]
 }

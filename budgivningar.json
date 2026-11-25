@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T09:52:31.369371+00:00",
+  "updated_at": "2026-11-25T19:48:56.594905+00:00",
   "budgivningar": [
     {
       "adress": "Västra Stallmästaregatan 30 C",
@@ -16,11 +16,18 @@
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2688599"
     },
     {
-      "adress": "Sofielundsvägen 48 D",
+      "adress": "Clematisgatan 8",
       "omrade": "",
       "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/50915243.jpg",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3279561"
+      "bild": "https://media.fastighetsbyran.se/51182783.png",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3279985"
+    },
+    {
+      "adress": "Spånehusvägen 56 B",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50763438.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3402316"
     },
     {
       "adress": "Östra Bernadottesgatan 37C",

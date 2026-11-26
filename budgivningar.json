@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-25T19:48:56.594905+00:00",
+  "updated_at": "2026-11-26T02:41:44.253211+00:00",
   "budgivningar": [
     {
       "adress": "Västra Stallmästaregatan 30 C",
@@ -42,6 +42,13 @@
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50981602.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3558329"
+    },
+    {
+      "adress": "Von lingens väg 41",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/50518906.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=3561114"
     },
     {
       "adress": "Von Lingens väg 13",

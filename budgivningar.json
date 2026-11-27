@@ -1,19 +1,19 @@
 {
-  "updated_at": "2026-11-27T12:58:47.134430+00:00",
+  "updated_at": "2026-11-27T21:54:25.952318+00:00",
   "budgivningar": [
-    {
-      "adress": "Västra Stallmästaregatan 30 C",
-      "omrade": "",
-      "aktuelltBud": "",
-      "bild": "https://media.fastighetsbyran.se/46175309.jpg",
-      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2138170"
-    },
     {
       "adress": "Koristgatan 6",
       "omrade": "",
       "aktuelltBud": "",
       "bild": "https://media.fastighetsbyran.se/50223358.jpg",
       "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2688599"
+    },
+    {
+      "adress": "Bullerbygatan 93",
+      "omrade": "",
+      "aktuelltBud": "",
+      "bild": "https://media.fastighetsbyran.se/49609577.jpg",
+      "url": "https://www.fastighetsbyran.com/sv/sverige/till-salu/skane-lan/malmo-stad/objekt/?objektID=2831015"
     },
     {
       "adress": "Clematisgatan 8",
